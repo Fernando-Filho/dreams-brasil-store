@@ -17,7 +17,6 @@ export const LogoContainer = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    /* font-size: 20px; */
 `
 
 export const Logo = styled.img`
@@ -31,13 +30,12 @@ export const Link = styled.a`
     color: inherit;
 
     &:hover{
-        transition: 2s;
         border-bottom: solid 1px
     }
 `
 
 export const SideBar = styled.ul`
-    display: flex;
+    display: ${(props) => props.displaySideBar};
     flex-direction: row;
     gap: 16px;
 `
